@@ -20,9 +20,12 @@ class ClassList extends Component {
    this.state = {
       classes: loadClasses()
    }
+
+
 } 
   render() {
-    
+    // сортировка классов по возрастанию
+    this.state.classes.sort((a,b)=> a.name - b.name)
 
     return (
        <div className='class-list'>
