@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import MarksTable from './StudentView/MarksTable';
-import StudentInfoComponent from './StudentView/StudentInfoComponent';
+import './StudentView/student.css';
 
+import Router from './StudentView/Router';
 import registerServiceWorker from './registerServiceWorker';
-import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter,Route,Switch } from 'react-router-dom';
 
 
-ReactDOM.render(<MarksTable />, document.getElementById('container'));
-ReactDOM.render(<StudentInfoComponent />, document.getElementById('top-bar'));
+
+ReactDOM.render((
+  <BrowserRouter>
+
+    <Router/>
+    
+  </BrowserRouter>
+), document.getElementById('root'))
+
+
 registerServiceWorker();

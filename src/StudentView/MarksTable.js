@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../App.css';
 
 
 import ReactTable from "react-table";
@@ -10,51 +9,50 @@ class MarksTable extends React.Component {
   render() {
     
     return (
-      <div>
+  <div>
+       
         <ReactTable
+
           showPagination = {false}
-          noDataText="Нет данных"
+          noDataText ="Нет данных"
+          sortable = {false}
+          resizable = {false}
+
           columns={[
             {
-              Header: "Предмет",
-
+               Header: () => <div className='marks-table-header'> <p>Дата</p></div>,
               
             },
-            {
-              Header: "Дата",
-              columns: [
-                {
-                  Header: "Дата1",
-                  
-                },
-                {
-                  Header: "Дата1",
-                  
-                },
-                {
-                  Header: "Дата1",
-                  
-                },
-                {
-                  Header: "Дата1",
-                  
-                },
-                {
-                  Header: "Дата1",
-                  
-                },
-                {
-                  Header: "Дата1",
-                  
-                },
-              ]
-            },
             
-          ]}
+            {
+                  Header: () => <div className='marks-table-header'><p>Аттестационные</p> <p>работы</p></div>,
+                 
+                  
+            },
+                
+                {
+                  Header: () => <div className='marks-table-header'><p>Домашние задания</p> и ведение тетради</div>,
+                  
+                  
+                },
+                {
+                  Header: () => <div className='marks-table-header'><p>Проектная</p><p> деятельность</p></div>,
+                  
+                  
+                },
+                {
+                  Header: () => <div className='marks-table-header'><p>Работа на уроке</p></div>,
+               
+                  
+                }
+            
+          ]
+
+        }
         />
-        <br />
         
-      </div>
+        </div>
+     
     );
   }
 }

@@ -17,18 +17,13 @@ constructor() {
    }
 } 
 
-  componentWillMount()  {
-  
-
-    
-  }
-
+ 
   render() {
     return (
-       <div className="App">
+       <p className='student-name-paragraph'>
        {this.state.student.firstname} 
        {this.state.student.lastname}
-      </div>
+      </p>
     );
   }
 }
