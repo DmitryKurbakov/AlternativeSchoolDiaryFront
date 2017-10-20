@@ -10,13 +10,9 @@ import { BrowserRouter,Route,Switch } from 'react-router-dom';
 
 
 ReactDOM.render((
-  <BrowserRouter>
+    <BrowserRouter>
 
-    <Router/>
-    
-  </BrowserRouter>
-), document.getElementById('root'))
+        <Router/>
 
-
-
-
+    </BrowserRouter>
+), document.getElementById('root'));

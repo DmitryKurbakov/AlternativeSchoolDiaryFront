@@ -1,7 +1,6 @@
 {
-  "name": "altj",
-  "version": "0.1.0",
-  "private": true,
+  "name": "AlternativeSchoolDiaryFront",
+  "version": "0.0.1",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "react": "^16.0.0",
@@ -10,7 +9,8 @@
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
-    "react-table": "^6.6.0"
+    "react-table": "^6.6.0",
+    "react-web-tabs": "^0.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
