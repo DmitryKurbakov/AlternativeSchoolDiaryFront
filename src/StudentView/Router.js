@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link,Switch,Route } from 'react-router-dom'
 import StudentMain from './StudentMain';
 import ClassList from './ClassList';
+import StudentList from './StudentList';
 import TeacherView from '../TeacherView/TeacherView';
 //тут заимпорть свой компонент
 
@@ -27,7 +28,7 @@ class Router extends Component {
     <Switch>
 
       <Route exact path='/' component={ClassList}/>
-      <Route path='/:classid/students' component={TeacherView}/>
+      <Route path='/:classid/students' component={StudentList}/>
       <Route exact path='/:classid/:studentid/marks' component={StudentMain}/>
 
       //тут пропиши свой компонент вместо StudentList
