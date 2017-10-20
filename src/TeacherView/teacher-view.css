@@ -1,0 +1,13 @@
+.teacher-view-container{
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-right: 15%;
+}
+
+.tab-panel-container{
+    width: 100%;
+}
+
+.multiline-table-header{
+    white-space: normal;
+}

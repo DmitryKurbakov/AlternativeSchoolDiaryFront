@@ -8,56 +8,14 @@ import "react-table/react-table.css";
 
 const loadStudents = () => {
   return [{
-    name: 'John'
+    name: 'Иванов Иван'
   }, {
-    name: 'Sam'
+    name: 'Иванов Иван'
   }, {
-    name: 'John'
+    name: 'Иванов Иван'
   }, {
-    name: 'Sam'
-  }, {
-    name: 'John'
-  }, {
-    name: 'Sam'
-  }, {
-    name: 'John'
-  }, {
-    name: 'Sam'
-  },
-    {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    },
-    {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }, {
-      name: 'John'
-    }, {
-      name: 'Sam'
-    }]
+    name: 'Иванов Иван'
+  }, ]
 }
 
 class StudentList extends Component {

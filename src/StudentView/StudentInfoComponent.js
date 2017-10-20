@@ -3,27 +3,27 @@ import React, { Component } from 'react';
 
 const loadStudent = () => {
   return {
-        firstname: "John",
-        lastname: "Doe"
-    }
+    firstname: "Иван",
+    lastname: "Иванов"
+  }
 }
 
 class StudentInfoComponent extends Component {
-constructor() {
-   super();   
-   this.state = {
+  constructor() {
+    super();
+    this.state = {
       student: loadStudent()
-   }
-} 
+    }
+  }
 
- 
+
   render() {
     return (
-       <p className='student-name-paragraph'>
-       {this.state.student.firstname} 
-       {this.state.student.lastname}
+      <p className='student-name-paragraph'>
+       {this.state.student.lastname+' ' +this.state.student.firstname}
+       
       </p>
-    );
+      );
   }
 }
 

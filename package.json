@@ -17,5 +17,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "plugins": [
+    "react-html-attrs"
+  ],
+  "devDependencies": {
+    "babel-plugin-react-html-attrs": "^2.0.0"
   }
 }
