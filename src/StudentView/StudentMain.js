@@ -4,8 +4,16 @@ import StudentInfoComponent  from './StudentInfoComponent';
 import SubjectList  from './SubjectList';
 import PeriondController from './PeriodController'
 
-class StudentMain extends Component {
 
+class StudentMain extends Component {
+constructor() {
+   super();   
+   this.state = {
+      subjectid: 1,
+      periodid: 2
+
+   }
+} 
 
   render() {
  
@@ -13,16 +21,16 @@ class StudentMain extends Component {
     <div>
       <div id ='top-bar' class='top-bar'>
         <StudentInfoComponent/>
-       <PeriondController/>
+       <PeriondController setPeriod = {(newperiodid) => this.setState({periodid: newperiodid})} />
       </div>  
      
       <div class="con" >
            <div id = 'side-bar' class = 'side-bar'>
-           	<SubjectList/>
+           	<SubjectList setSubject = {(newsubjectid) => this.setState({subjectid: newsubjectid})} />
            </div>
           
           <div id='container'>
-          <MarksTable/>
+          <MarksTable subjectid = {this.state.subjectid} periodid = {this.state.periodid}/>
           </div>
       </div>
       
