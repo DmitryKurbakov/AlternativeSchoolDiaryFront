@@ -15,14 +15,14 @@ class Router extends Component {
 
     return (
        <div>
-        <div class ='main-header'>
+        <div className ='main-header'>
       <div>
         <img src={require('./logo.png')}/>
       </div> 
-      <div class='project-name-div'>Альтернативный дневник ученика
+      <div className='project-name-div'>Альтернативный дневник ученика
         
       </div> 
-      <a href='/teacher'><div class='teacher-link-div' >Вход для учителя</div></a> 
+      <a href='/teacher'><div className='teacher-link-div' >Вход для учителя</div></a>
     </div>
           
     <Switch>

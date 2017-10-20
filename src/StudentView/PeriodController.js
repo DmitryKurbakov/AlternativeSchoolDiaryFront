@@ -34,7 +34,7 @@ change(event){
     return (
       <div className='period-controller'>
      
-       <select class="form-control period-controller" onChange={this.change} value={this.state.periodid}>
+       <select className="form-control period-controller" onChange={this.change} value={this.state.periodid}>
           <option>1</option>
           <option>2</option>
           <option>3</option>
