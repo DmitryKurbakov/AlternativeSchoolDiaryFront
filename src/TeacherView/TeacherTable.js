@@ -39,25 +39,29 @@ export default class TeacherTable extends React.Component {
                     data={data}
                     columns={[
                         {
-                            Header: "First Name",
-                            accessor: "firstName",
+                            Header: "Дата",
+                            accessor: "date",
+                        },
+                        {
+                            Header: "Аттестационные работы",
+                            accessor: "tests",
                             Cell: this.renderEditable
                         },
                         {
-                            Header: "Last Name",
-                            accessor: "lastName",
+                            Header: "Домашнее задание и ведение тетради",
+                            accessor: "homework",
                             Cell: this.renderEditable
                         },
                         {
-                            Header: "Full Name",
-                            id: "full",
-                            accessor: d =>
-                                <div
-                                    dangerouslySetInnerHTML={{
-                                        __html: d.firstName + " " + d.lastName
-                                    }}
-                                />
-                        }
+                            Header: "Проектная Деятельность",
+                            accessor: "projects",
+                            Cell: this.renderEditable
+                        },
+                        {
+                            Header: "работа на уроках",
+                            accessor: "lessons",
+                            Cell: this.renderEditable
+                        },
                     ]}
                     defaultPageSize={10}
                     className="-striped -highlight"
