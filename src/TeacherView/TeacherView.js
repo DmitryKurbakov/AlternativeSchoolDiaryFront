@@ -9,7 +9,7 @@ export default class TeacherView extends React.Component{
     render(){
         return(
 
-            <div className='container'>
+            <div className='teacher-view-container'>
                 <VerticalTabsTeacherView />
             </div>
         );
