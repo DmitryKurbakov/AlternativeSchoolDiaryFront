@@ -1,7 +1,7 @@
 
 
 /*стили главной страницы ученика*/
-.container 
+.con 
 { 
 	margin-left: 15%;
     margin-top: 30px;
@@ -49,10 +49,20 @@ line-height: 50px;
 
 	margin-left: 5%;
 font-size: 15pt;
-
+display: inline;
 }
 
+.table-cell {
+   background-color: white;
+    color: black;
+    display: block;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
 .menu {
+    border-bottom: solid 1px rgba(0,0,0,0.05);
    background-color: white;
     color: black;
     display: block;
@@ -63,12 +73,11 @@ font-size: 15pt;
 }
 
 
-
 /*список классов*/
 .class-list {
 
     margin-right: 40%;
-   margin: 5%;
+    margin-top: 5%;
     margin-left: 40%;
     background-color: white;
     
@@ -88,4 +97,37 @@ div a {
 
 .rt-tr{
     background-color: white;
+}
+
+.btn.btn-default{
+
+    margin-left: 40%;
+    margin-top: 1%;
+    color: black;
+
+}
+
+.btn.btn-default.to-student{
+
+    margin-left: 26%;
+
+    
+}
+
+.period-controller{
+
+
+    
+    display: inline;
+    float: right;
+    width: 120px;
+    vertical-align:middle;
+    
+
+}
+    
+.period-controller.form-control{
+    width: 100%;
+    margin-top:8px;
+    margin-right: 8px;
 }

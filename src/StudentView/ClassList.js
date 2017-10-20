@@ -6,7 +6,7 @@ import "react-table/react-table.css";
 
 
 const loadClasses = () => {
-  return [{"name": "11", "flows":["11 А","11 B"]},{"name": "10","flows":["11 А","11 B"]},]
+  return [{"num": "11", "flow":["11 А","11 B"]},{"num": "10", "flow":["10 А","10 B"]}]
 }
 
 
@@ -24,33 +24,28 @@ class ClassList extends Component {
 
 } 
   render() {
-    // сортировка классов по возрастанию
-    this.state.classes.sort((a,b)=> a.name - b.name)
 
+    // сортировка классов по возрастанию
+    this.state.classes.sort((a,b)=> a.num - b.num);
+    var listOfClasses = [];
+     for (var i = 0; i < this.state.classes.length; i++) {
+ 
+              listOfClasses.push( 
+               
+               <Link to='/1/students'> 
+               <div className = 'menu'>
+               {this.state.classes[i].num + ' класс'}
+               </div>
+               </Link> 
+               );
+     
+     }
     return (
        <div className='class-list'>
-       
-        <ReactTable
-
-          showPagination = {false}
-          minRows = {1}
-          noDataText ="Нет данных"
-          sortable = {false}
-          resizable = {false}
-          data = {this.state.classes}
-          columns={[
-            {
-               accessor: 'name',
-               Header: () => <div className='marks-table-header'> <p>Список классов</p></div>,
-               Cell: props => <Link to='/1/students'> <div className='menu'>{props.value+' класс'}</div> </Link> 
-              
-            }
-            
-          ]
-
-        }
-        />
-        
+          <div className = 'menu'>
+               Список классов:
+               </div>
+        {listOfClasses}
         </div>
     )
   }

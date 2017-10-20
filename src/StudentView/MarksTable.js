@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 
+import { Link} from 'react-router-dom'
 class MarksTable extends React.Component {
   
   render() {
@@ -50,7 +51,7 @@ class MarksTable extends React.Component {
 
         }
         />
-        
+        <Link to= '/{this.props.match.params.classid}/students'className='btn btn-default to-student' >К выбору ученика</Link> 
         </div>
      
     );

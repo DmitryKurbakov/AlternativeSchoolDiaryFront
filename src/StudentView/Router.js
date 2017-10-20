@@ -27,8 +27,9 @@ class Router extends Component {
     <Switch>
 
       <Route exact path='/' component={ClassList}/>
-      <Route exact path='/:classid/:studentid/marks' component={StudentMain}/>
       <Route path='/:classid/students' component={StudentList}/>
+      <Route exact path='/:classid/:studentid/marks' component={StudentMain}/>
+      
     </Switch>
        </div>
     )

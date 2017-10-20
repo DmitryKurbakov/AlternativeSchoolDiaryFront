@@ -11,11 +11,6 @@ body {
 	font-family: geometria;
 	src:url(10261.otf);
 }
-.container 
-{
-	margin: 1%;
-    margin-top: 30px;
-}
 
 
 .main-header
@@ -46,7 +41,7 @@ body {
 	text-overflow: hidden;
 	width: 50%;
 	font-size: 22pt;
-	margin-left: 20%
+	margin-left: 21%
 }
 
 .teacher-link-div{
