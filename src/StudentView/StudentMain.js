@@ -19,13 +19,13 @@ constructor() {
  
     return (
     <div>
-      <div id ='top-bar' class='top-bar'>
+      <div id ='top-bar' className='top-bar'>
         <StudentInfoComponent/>
        <PeriondController setPeriod = {(newperiodid) => this.setState({periodid: newperiodid})} />
       </div>  
      
-      <div class="con" >
-           <div id = 'side-bar' class = 'side-bar'>
+      <div className="con" >
+           <div id = 'side-bar' className = 'side-bar'>
            	<SubjectList setSubject = {(newsubjectid) => this.setState({subjectid: newsubjectid})} />
            </div>
           

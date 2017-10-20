@@ -18,9 +18,12 @@ class Subject extends Component {
       this.change = this.change.bind(this)
 
   }
+
+
   change(){
     this.props.setSubject(this.state.subjectid)
   }
+
 
   render() {
         

@@ -15,7 +15,7 @@ export default class VerticalTabsTeacherView extends Component {
                     <Tab tabFor="vertical-tab-three">Tab 3</Tab>
                 </TabList>
                 <TabPanel tabId="vertical-tab-one">
-                    <p><TeacherTable /></p>
+                    <TeacherTable />
                 </TabPanel>
                 <TabPanel tabId="vertical-tab-two">
                     <p>Tab 2 content</p>

@@ -1,12 +1,14 @@
 import React from '../../node_modules/react'
 import VerticalTabsTeacherView from './VerticalTabsTeacherView';
 
-export default class TeacherView extends React.Component{
+export default class TeacherView extends React.Component {
 
-    render(){
-        return(
-
+  render() {
+    return (
+      <div >
             <VerticalTabsTeacherView />
-        );
-    }
+        
+</div>
+      );
+  }
 }
