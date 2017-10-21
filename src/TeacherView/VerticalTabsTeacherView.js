@@ -11,12 +11,9 @@ export default class VerticalTabsTeacherView extends Component {
 
     componentDidMount() {
 
-
         ReactDOM.findDOMNode(this.refs.scrollStyle).scrollTop = 1000;
 
     }
-
-
 
     render() {
 
