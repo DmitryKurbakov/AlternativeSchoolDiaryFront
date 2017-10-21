@@ -28,16 +28,6 @@ export default class VerticalTabsTeacherView extends Component {
                     <Tab tabFor="vertical-tab-fifteen">Смирнов Петр Александрович</Tab>
                 </TabList>
 
-                <TabPanel tabId="vertical-tab-one">
-                    <TeacherTable />
-                </TabPanel>
-                <TabPanel tabId="vertical-tab-two">
-                    <p>Tab 2 content</p>
-                </TabPanel>
-                <TabPanel tabId="vertical-tab-three">
-                    <p>Tab 3 content</p>
-                </TabPanel>
-
                 <div className='tab-panel-container'>
                     <TabPanel tabId="vertical-tab-one">
                         <TeacherTable/>
