@@ -47,7 +47,8 @@ class MarksTable extends React.Component {
 
       }
       /> 
-            
+            <Link to = '/'
+      className = 'btn btn-default to-student'> Выйти </Link> 
             </div>
 
       );

@@ -35,7 +35,7 @@ class PeriodController extends Component {
   render() {
     return (
       <div className='period-controller'>
-     
+      <p id='choose-period-paragraph'>Выбрать семестр:</p>
        <select className="form-control period-controller" onChange={this.change} value={this.state.periodid}>
           <option>1</option>
           <option>2</option>

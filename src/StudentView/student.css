@@ -3,7 +3,7 @@
 .con {
     margin-left: 15%;
     margin-top: 30px;
-    margin-right: 15%;
+     width: 1350px;
 }
 
 .marks-table-header {
@@ -19,16 +19,7 @@
 
 
 
-.top-bar {
-    background-color: white;
-    margin-top: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    height: 50px;
-    vertical-align: middle;
-    line-height: 50px;
-}
+
 
 .side-bar {
     background-color: white;
@@ -41,12 +32,6 @@
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
-.student-name-paragraph {
-
-    margin-left: 5%;
-    font-size: 15pt;
-    display: inline;
-}
 
 .table-cell {
     background-color: white;
@@ -71,23 +56,6 @@
 }
 
 
-
-/*список классов*/
-
-.class-list {
-
-    margin-right: 40%;
-    margin-top: 5%;
-    margin-left: 40%;
-    background-color: white;
-
-    height: 100%;
-    width: 20%;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-}
-
-
-
 div a {
 
     text-decoration: none;
@@ -103,6 +71,7 @@ div a:hover {
 
 .rt-tr {
     background-color: white;
+    color: black;
 }
 
 .btn.btn-default {
@@ -117,18 +86,45 @@ div a:hover {
     margin-left: 26%;
 }
 
+/*Хедер на странице с оценками ученика*/
+.top-bar {
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 1350px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    height: 50px;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.student-name-paragraph {
+
+    margin-left: 5%;
+    font-size: 15pt;
+    display: inline;
+}
+
+
 .period-controller {
 
 
 
     display: inline;
     float: right;
-    width: 120px;
+    width: 300px;
     vertical-align: middle;
 }
 
 .period-controller.form-control {
-    width: 100%;
+    width: 120px;
     margin-top: 8px;
     margin-right: 8px;
+    
+}
+
+#choose-period-paragraph
+{
+    display: inline-block;
+  
 }

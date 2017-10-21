@@ -30,9 +30,7 @@ class Router extends Component {
     <Switch>
 
       <Route exact path='/' component={Login}/>
-      <Route exact path='/:classid/:studentid/marks' component={StudentMain}/>
-
-      //тут пропиши свой компонент вместо StudentList
+      <Route exact path='/student/marks' component={StudentMain}/>
       <Route exact path='/teacher' component = {TeacherView}/>
     </Switch>
        </div>

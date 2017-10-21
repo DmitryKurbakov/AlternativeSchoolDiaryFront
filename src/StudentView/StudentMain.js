@@ -21,6 +21,7 @@ constructor() {
     <div>
       <div id ='top-bar' className='top-bar'>
         <StudentInfoComponent/>
+        
        <PeriondController setPeriod = {(newperiodid) => this.setState({periodid: newperiodid})} />
       </div>  
      
