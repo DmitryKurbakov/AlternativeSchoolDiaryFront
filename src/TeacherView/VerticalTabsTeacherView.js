@@ -11,21 +11,21 @@ export default class VerticalTabsTeacherView extends Component {
 
             <Tabs defaultTab="vertical-tab-one" vertical>
                 <TabList>
-                    <Tab tabFor="vertical-tab-one">Иванов Иван Иванович</Tab>
-                    <Tab tabFor="vertical-tab-two">Лебедев Семен Игоревич</Tab>
-                    <Tab tabFor="vertical-tab-three">Смирнов Петр Александрович</Tab>
-                    <Tab tabFor="vertical-tab-four">Иванов Иван Иванович</Tab>
-                    <Tab tabFor="vertical-tab-five">Лебедев Семен Игоревич</Tab>
-                    <Tab tabFor="vertical-tab-six">Смирнов Петр Александрович</Tab>
-                    <Tab tabFor="vertical-tab-seven">Иванов Иван Иванович</Tab>
-                    <Tab tabFor="vertical-tab-eight">Лебедев Семен Игоревич</Tab>
-                    <Tab tabFor="vertical-tab-nine">Смирнов Петр Александрович</Tab>
-                    <Tab tabFor="vertical-tab-ten">Иванов Иван Иванович</Tab>
-                    <Tab tabFor="vertical-tab-eleven">Лебедев Семен Игоревич</Tab>
-                    <Tab tabFor="vertical-tab-twelve">Смирнов Петр Александрович</Tab>
-                    <Tab tabFor="vertical-tab-thirteen">Иванов Иван Иванович</Tab>
-                    <Tab tabFor="vertical-tab-fourteen">Лебедев Семен Игоревич</Tab>
-                    <Tab tabFor="vertical-tab-fifteen">Смирнов Петр Александрович</Tab>
+                    <Tab tabFor="vertical-tab-one">21.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-two">22.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-three">23.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-four">24.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-five">25.10.2017ч</Tab>
+                    <Tab tabFor="vertical-tab-six">26.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-seven">27.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-eight">28.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-nine">29.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-ten">30.10.2017</Tab>
+                    <Tab tabFor="vertical-tab-eleven">01.11.2017</Tab>
+                    <Tab tabFor="vertical-tab-twelve">02.11.2017</Tab>
+                    <Tab tabFor="vertical-tab-thirteen">03.11.2017</Tab>
+                    <Tab tabFor="vertical-tab-fourteen">04.11.2017</Tab>
+                    <Tab tabFor="vertical-tab-fifteen">05.11.2017</Tab>
                 </TabList>
 
                 <div className='tab-panel-container'>

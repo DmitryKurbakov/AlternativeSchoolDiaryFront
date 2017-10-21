@@ -21,16 +21,18 @@ export default class TeacherTable extends React.Component {
         super();
         this.state ={
             data: [
-                {date: "20.10.2017", "":""},
-                {date: "21.10.2017","":""},
-                {date: "22.10.2017","":""},
-                {date: "23.10.2017","":""},
-                {date: "24.10.2017","":""},
-                {date: "25.10.2017","":""},
-                {date: "26.10.2017","":""},
-                {date: "27.10.2017","":""},
-                {date: "28.10.2017","":""},
-                {date: "29.10.2017","":""}]
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""},
+                {student: "Иванов Иван Иванович", "":""}]
         };
         this.renderEditable = this.renderEditable.bind(this);
     }
@@ -61,8 +63,8 @@ export default class TeacherTable extends React.Component {
                     data={data}
                     columns={[
                         {
-                            Header: "Дата",
-                            accessor: "date",
+                            Header: "Ученик",
+                            accessor: "student",
                         },
                         {
                             Header: <span className='multiline-table-header'>Аттестационные работы</span>,
