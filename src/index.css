@@ -59,3 +59,13 @@ body {
 	float: right;
 	margin-right: 2%;
 }
+/*Авторизация*/
+
+.logindiv
+{
+	background-color: black;
+	height:300px;
+	width: 400px;
+	margin-left: 40%;
+	margin-top: 5%;
+}
