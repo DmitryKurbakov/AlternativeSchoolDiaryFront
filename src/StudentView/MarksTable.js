@@ -42,7 +42,7 @@ class MarksTable extends React.Component {
 
         },
         {
-          Header: () => <div className = 'marks-table-header' > < p > Работа на уроке < /p></div>,
+          Header: () => <div className = 'marks-table-header' > < p > Работа на уроке </p></div>,
 
 
         }
