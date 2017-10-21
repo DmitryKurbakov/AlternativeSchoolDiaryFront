@@ -9,7 +9,7 @@ class ResultsTable extends React.Component {
   render() {
 
     return (
-      <div id='results'>
+      <div className='marks'>
 
             
       <table className = "table table-bordered">

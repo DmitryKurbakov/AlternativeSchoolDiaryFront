@@ -2,7 +2,7 @@
 
 .con {
     margin-left: 15%;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 1350px;
     height: 100%;
 }
@@ -24,7 +24,7 @@
 
 
 .side-bar {
-    margin-right: 1%;
+    margin-right: 10px;
     overflow: hidden;
     float: left;
     display: inline;
@@ -89,7 +89,7 @@ div a:hover {
 /*Хедер на странице с оценками ученика*/
 .top-bar {
     background-color: white;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 15%;
     width: 1350px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -141,6 +141,7 @@ max-width: 20%;
 text-align: center;
 }
 
-#results{
+.marks{
     margin-top: 10px;
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
 }
