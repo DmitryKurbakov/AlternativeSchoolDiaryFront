@@ -13,9 +13,13 @@ class MarksTable extends React.Component {
 
             
       <ReactTable
-
-      showPagination = { false } noDataText = "Нет данных"
-      sortable = { false } resizable = { false } minRows = { 5 } columns = {
+      
+      showPagination = { false } 
+      noDataText = "Нет данных"
+      sortable = { false } 
+      resizable = { false } 
+      minRows = { 6 } 
+      columns = {
       [{
         Header: () => <div className = 'marks-table-header' > <p> Дата </p></div >,
 
@@ -47,8 +51,6 @@ class MarksTable extends React.Component {
 
       }
       /> 
-            <Link to = '/'
-      className = 'btn btn-default to-student'> Выйти </Link> 
             </div>
 
       );

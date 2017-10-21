@@ -11,7 +11,7 @@ class Login extends Component {
     return (
       <div className='logindiv'>
         <form class="form-signin">
-        <h3 class="form-signin-heading">Авторизация</h3>
+        <h3 class="form-signin-heading">Аутентификация</h3>
         <label for="inputEmail" class="sr-only">Имя пользователя</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Имя пользователя" required="" autofocus=""/>
         <label for="inputPassword" class="sr-only">Пароль</label>

@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: geometrialight;
   background-color: #edeeef;
-  font-size: 12pt;
+  font-size: 11pt;
 }
 
 @font-face
@@ -63,7 +63,7 @@ body {
 
 .logindiv
 {
-	height:250px;
+	height:280px;
 	width: 400px;
 	margin-left: 40%;
 	margin-top: 5%;
@@ -72,3 +72,10 @@ body {
 	padding: 1%;
 }
 
+input{
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.form-signin-heading{
+	text-align: center;
+}

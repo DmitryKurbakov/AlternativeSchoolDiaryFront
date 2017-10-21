@@ -3,9 +3,13 @@
 .con {
     margin-left: 15%;
     margin-top: 30px;
-     width: 1350px;
+    width: 1350px;
+    height: 100%;
 }
 
+#container{
+    margin-left: 26%;
+}
 .marks-table-header {
 
     overflow: hidden;
@@ -20,12 +24,10 @@
 
 
 .side-bar {
-    background-color: white;
     margin-right: 1%;
     overflow: hidden;
     float: left;
     display: inline;
-    height: 100%;
     width: 25%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
@@ -125,4 +127,20 @@ div a:hover {
 {
     display: inline-block;
   
+}
+/*results table*/
+
+.result-tr{
+    background-color: white;
+    height:30px;
+}
+
+.result-tr td {
+width: 20%;
+max-width: 20%;
+text-align: center;
+}
+
+#results{
+    margin-top: 10px;
 }
