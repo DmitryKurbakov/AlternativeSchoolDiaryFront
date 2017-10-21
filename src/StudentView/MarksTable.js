@@ -47,8 +47,7 @@ class MarksTable extends React.Component {
 
       }
       /> 
-            <Link to = '/{this.props.match.params.classid}/students'
-      className = 'btn btn-default to-student'> К выбору ученика </Link> 
+            
             </div>
 
       );

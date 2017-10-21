@@ -9,7 +9,7 @@ body {
 @font-face
 {
 	font-family: geometriabold;
-	src:url(Geometria-Bold.otf);
+	src:url(fonts/Geometria-Bold.otf);
 
 }
 
@@ -17,7 +17,7 @@ body {
 @font-face
 {
 	font-family: geometrialight;
-	src:url(Geometria-Medium.otf);
+	src:url(fonts/Geometria-Medium.otf);
 
 }
 
