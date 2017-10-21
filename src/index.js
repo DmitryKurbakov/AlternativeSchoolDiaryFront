@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import './StudentView/student.css';
 
-import Router from './StudentView/Router';
+import Router from './Router';
 import { BrowserRouter,Route,Switch } from 'react-router-dom';
 
 

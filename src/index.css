@@ -1,15 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: geometria;
+  font-family: geometrialight;
   background-color: #edeeef;
   font-size: 12pt;
 }
 
 @font-face
 {
-	font-family: geometria;
-	src:url(10261.otf);
+	font-family: geometriabold;
+	src:url(Geometria-Bold.otf);
+
+}
+
+
+@font-face
+{
+	font-family: geometrialight;
+	src:url(Geometria-Medium.otf);
+
 }
 
 
@@ -28,7 +37,6 @@ body {
 
 .main-header div
 {	
-
 	text-align: center;
     vertical-align: middle;
     line-height: 90px;
@@ -38,6 +46,7 @@ body {
 }
 
 .project-name-div{
+	font-family: geometriabold;
 	text-overflow: hidden;
 	width: 50%;
 	font-size: 22pt;

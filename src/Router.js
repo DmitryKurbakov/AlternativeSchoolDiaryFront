@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Link, Switch, Route } from 'react-router-dom'
-import StudentMain from './StudentMain';
-import ClassList from './ClassList';
-import StudentList from './StudentList';
-import TeacherView from '../TeacherView/TeacherView';
+import StudentMain from './StudentView/StudentMain';
+import ClassList from './StudentView/ClassList';
+import StudentList from './StudentView/StudentList';
+import TeacherView from './TeacherView/TeacherView';
 //тут заимпорть свой компонент
 
 
@@ -17,11 +17,12 @@ class Router extends Component {
       <div>
         <div className ='main-header'>
       <div>
-        <img src={require('./logo.png')}/>
+        <Link to='/'><img src={require('./logo.png')} /></Link>
       </div> 
-      <div className='project-name-div'>Альтернативный дневник ученика
+      <Link to='/'><div className='project-name-div'>Альтернативный дневник ученика
         
-      </div> 
+      </div> </Link>
+      
       <a href='/teacher'><div className='teacher-link-div' >Вход для учителя</div></a> 
     </div>
           
