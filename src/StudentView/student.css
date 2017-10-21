@@ -2,10 +2,14 @@
 
 .con {
     margin-left: 15%;
-    margin-top: 30px;
-     width: 1350px;
+    margin-top: 10px;
+    width: 1350px;
+    height: 100%;
 }
 
+#container{
+    margin-left: 26%;
+}
 .marks-table-header {
 
     overflow: hidden;
@@ -17,13 +21,13 @@
     margin: 3%;
 }
 
+
+
 .side-bar {
-    background-color: white;
-    margin-right: 1%;
+    margin-right: 10px;
     overflow: hidden;
     float: left;
     display: inline;
-    height: 100%;
     width: 25%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
@@ -85,7 +89,7 @@ div a:hover {
 /*Хедер на странице с оценками ученика*/
 .top-bar {
     background-color: white;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 15%;
     width: 1350px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
@@ -123,4 +127,21 @@ div a:hover {
 {
     display: inline-block;
   
+}
+/*results table*/
+
+.result-tr{
+    background-color: white;
+    height:30px;
+}
+
+.result-tr td {
+width: 20%;
+max-width: 20%;
+text-align: center;
+}
+
+.marks{
+    margin-top: 10px;
+    box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.5);
 }

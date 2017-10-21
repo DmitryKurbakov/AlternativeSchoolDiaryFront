@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import MarksTable from './MarksTable';
+import ResultsTable from './Results';
 import StudentInfoComponent  from './StudentInfoComponent';
 import SubjectList  from './SubjectList';
 import PeriondController from './PeriodController'
@@ -32,7 +33,10 @@ constructor() {
           
           <div id='container'>
           <MarksTable subjectid = {this.state.subjectid} periodid = {this.state.periodid}/>
+
+          <ResultsTable/>
           </div>
+
       </div>
       
       </div>

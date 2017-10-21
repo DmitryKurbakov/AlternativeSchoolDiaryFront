@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 const loadSubjects = () => {
-    return [{ name: 'Математика' }, { name: 'Русский язык' }]
+    return [{ name: 'Математика' }, { name: 'Русский язык' },{ name: 'Физика' }, { name: 'Обществознание' },]
 }
 
 
