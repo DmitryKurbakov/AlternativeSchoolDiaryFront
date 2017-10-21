@@ -2,23 +2,29 @@ import React, { Component } from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs/es';
 import 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
-import $ from 'jquery'
+
+import ReactDOM from 'react-dom';
 
 import TeacherTable from './TeacherTable';
 
 export default class VerticalTabsTeacherView extends Component {
 
     componentDidMount() {
-        $(document).ready(function() {
-            $('.ScrollStyle').scrollTop(10);
-        });
+
+
+        ReactDOM.findDOMNode(this.refs.scrollStyle).scrollTop = 1000;
+
     }
 
+
+
     render() {
+
+
         return (
                 <Tabs defaultTab="vertical-tab-fourteen" vertical>
 
-                    <div className="ScrollStyle">
+                    <div className="ScrollStyle" ref="scrollStyle">
                         <TabList className="tab-list">
                             <Tab tabFor="vertical-tab-one">21.10.2017</Tab>
                             <Tab tabFor="vertical-tab-two">22.10.2017</Tab>
