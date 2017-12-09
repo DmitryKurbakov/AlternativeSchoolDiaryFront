@@ -26,9 +26,7 @@ class Subject extends Component {
 
 
   render() {
-        
-
-              return (                
+           return (                
                <div className = 'menu' onClick={this.change}> { this.props.name } < /div>
           );
       }

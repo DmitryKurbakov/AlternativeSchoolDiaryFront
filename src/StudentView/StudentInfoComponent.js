@@ -1,26 +1,48 @@
 import React, { Component } from 'react';
 
 
-const loadStudent = () => {
-  return {
-    firstname: "Иван",
-    lastname: "Иванов"
-  }
-}
 
 class StudentInfoComponent extends Component {
+
+ 
+
   constructor() {
     super();
+
+    this.loadData = this.loadData.bind(this);
+
     this.state = {
-      student: loadStudent()
-    }
+      student: '' 
+
+   }
+
+
+   
+  }
+  componentDidMount(){
+    this.loadData()
+  }
+ 
+   loadData()
+
+  { 
+    console.log(this.state.student)
+
+    fetch('http://localhost:8080', {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+       }
+
+    }).then(response => response.json()).then( json=> this.setState({name: json.name, lastname:json.lastname }) )
   }
 
 
   render() {
+    console.log(this.state.student)
     return (
       <p className='student-name-paragraph'>
-       {this.state.student.lastname+' ' +this.state.student.firstname}
+       {this.state.name + ' ' + this.state.lastname}
        
       </p>
       );
