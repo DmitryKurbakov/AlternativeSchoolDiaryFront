@@ -3,7 +3,7 @@ import MarksTable from './MarksTable';
 import ResultsTable from './Results';
 import StudentInfoComponent  from './StudentInfoComponent';
 import SubjectList  from './SubjectList';
-import PeriondController from './PeriodController'
+import PeriodController from './PeriodController'
 
 
 class StudentMain extends Component {
@@ -23,7 +23,7 @@ constructor() {
       <div id ='top-bar' className='top-bar'>
         <StudentInfoComponent/>
         
-       <PeriondController setPeriod = {(newperiodid) => this.setState({periodid: newperiodid})} />
+       <PeriodController setPeriod = {(newperiodid) => this.setState({periodid: newperiodid})} />
       </div>  
      
       <div className="con" >

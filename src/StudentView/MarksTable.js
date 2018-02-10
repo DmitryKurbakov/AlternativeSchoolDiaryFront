@@ -16,11 +16,13 @@ class MarksTable extends React.Component {
       noDataText = "Нет данных"
       sortable = { false } 
       resizable = { false } 
+      contentEditable = {true}
       minRows = { 6 } 
       columns = {
       [
         {
-          Header: () => <div className = 'marks-table-header' > <p> Дата </p></div >,
+          Header: () => <div className = 'marks-table-header'> <p> Дата </p></div >,
+          
         },
 
         {

@@ -19,79 +19,48 @@ const makeDefaultState = () => ({
 export default class TeacherTable extends React.Component {
     constructor() {
         super();
-        this.state ={
-            data: [
-                {date: "20.10.2017", "":""},
-                {date: "21.10.2017","":""},
-                {date: "22.10.2017","":""},
-                {date: "23.10.2017","":""},
-                {date: "24.10.2017","":""},
-                {date: "25.10.2017","":""},
-                {date: "26.10.2017","":""},
-                {date: "27.10.2017","":""},
-                {date: "28.10.2017","":""},
-                {date: "29.10.2017","":""}]
-        };
-        this.renderEditable = this.renderEditable.bind(this);
+        
     }
 
 
-    renderEditable(cellInfo) {
-        return (
-            <div
-                style={{ backgroundColor: "#fafafa" }}
-                contentEditable
-                suppressContentEditableWarning
-                onBlur={e => {
-                    const data = [...this.state.data];
-                    data[cellInfo.index][cellInfo.column.id] = e.target.innerHTML;
-                    this.setState({ data });
-                }}
-                dangerouslySetInnerHTML={{
-                    __html: this.state.data[cellInfo.index][cellInfo.column.id]
-                }}
-            />
-        );
-    }
+    
     render() {
-        const { data } = this.state;
-        return (
-            <div>
-                <ReactTable
-                    data={data}
-                    columns={[
-                        {
-                            Header: "Дата",
-                            accessor: "date",
-                        },
-                        {
-                            Header: <span className='multiline-table-header'>Аттестационные работы</span>,
-                            accessor: "tests",
-                            Cell: this.renderEditable
 
-                        },
-                        {
-                            Header: <span className='multiline-table-header'>Домашнее задание и ведение тетради</span>,
-                            accessor: "homework",
-                            Cell: this.renderEditable
-                        },
-                        {
-                            Header: <span className='multiline-table-header'>Проектная деятельность</span>,
-                            accessor: "projects",
-                            Cell: this.renderEditable
-                        },
-                        {
-                            Header: <span className='multiline-table-header'>Работа на уроках</span>,
-                            accessor: "lessons",
-                            Cell: this.renderEditable
-                        },
-                    ]}
-                    defaultPageSize={10}
-                    className="-striped -highlight"
-                />
-                <br />
+    return (
+      <div className='marks'>            
+      <ReactTable
+      showPagination = { false } 
+      noDataText = "Нет данных"
+      sortable = { false } 
+      resizable = { false } 
+      contentEditable = {true}
+      minRows = { 6 } 
+      columns = {
+      [
+        {
+          Header: () => <div className = 'marks-table-header'> <p> Имя</p></div >,
+          
+        },   
 
-            </div>
-        );
-    }
+        {
+          Header: () => <div className = 'marks-table-header' > <p> Аттестационные </p> <p>работы</p > </div>,
+        },
+
+        {
+          Header: () => <div className = 'marks-table-header' > < p > Домашние задания </p> и ведение тетради</div >,
+        },
+        {
+          Header: () => <div className = 'marks-table-header' > <p> Проектная </p><p> деятельность</p >  </div>,
+        },
+        {
+          Header: () => <div className = 'marks-table-header' > < p > Работа на уроке < /p></div>,
+        }
+      ]
+
+      }
+      /> 
+      </div>
+
+      );
+  }
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link, Switch, Route } from 'react-router-dom'
 import StudentMain from './StudentView/StudentMain';
 
-import TeacherView from './TeacherView/TeacherView';
+import TeacherMain from './TeacherView/TeacherMain';
 import Login from './Auth.js'
 
 //тут заимпорть свой компонент
@@ -31,7 +31,7 @@ class Router extends Component {
 
       <Route exact path='/' component={Login}/>
       <Route exact path='/student/marks' component={StudentMain}/>
-      <Route exact path='/teacher' component = {TeacherView}/>
+      <Route exact path='/teacher' component = {TeacherMain}/>
     </Switch>
        </div>
     )

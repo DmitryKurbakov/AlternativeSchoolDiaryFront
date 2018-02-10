@@ -112,7 +112,7 @@ div a:hover {
 
     display: inline;
     float: right;
-    width: 300px;
+    width: 250px;
     vertical-align: middle;
 }
 
@@ -120,12 +120,14 @@ div a:hover {
     width: 120px;
     margin-top: 8px;
     margin-right: 8px;
+
     
 }
 
 #choose-period-paragraph
 {
     display: inline-block;
+
   
 }
 /*results table*/
