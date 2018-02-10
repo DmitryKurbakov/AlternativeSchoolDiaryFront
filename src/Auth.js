@@ -46,7 +46,7 @@ class Login extends Component {
         <form class="form-signin">
         <h3 class="form-signin-heading">Аутентификация</h3>
         <label for="inputEmail" class="sr-only">Имя пользователя</label>
-        <input name = 'username' type="email" id="inputEmail" class="form-control" placeholder="Имя пользователя" required=""  onChange={this.handleChange} autofocus=""/>
+        <input name = 'username' type="username" id="inputEmail" class="form-control" placeholder="Имя пользователя" required=""  onChange={this.handleChange} autofocus=""/>
         <label for="inputPassword" class="sr-only">Пароль</label>
         <input name = 'password'  type="password" id="inputPassword" class="form-control" placeholder="Пароль" onChange={this.handleChange} required=""/>
         <div class="checkbox">
